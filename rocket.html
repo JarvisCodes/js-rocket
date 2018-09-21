@@ -9,26 +9,26 @@
 
 <div class="left"> 
 	
-	<div class="state1">
+	<div class="interface state1">
 		<h1>Rocket launch</h1>
 		<a href="#" class="button" onclick="changeState(2)">Launch!</a>
 	</div>
 
-	<div class="state2">
+	<div class="interface state2">
 		<h1 id='countdown'>10</h1>
 		<a href="#" class="button" onclick="changeState(1)">ABORT!</a>
 	</div>
 
-	<div class="state3">
+	<div class="interface state3">
 		<h1>LIFTOFF</h1>
 	</div>
 
-	<div class="state4">
+	<div class="interface state4">
 		<h1>Well done</h1>
 		<a href="#" class="button" onclick="changeState(1);">do it again.</a>
 	</div>
 
-	<div class="state5">
+	<div class="interface state5">
 		<h1>oh no, shit</h1>
 		<a href="#" class="button" onclick="changeState(1);">try again little boy.</a>
 	</div>
@@ -38,13 +38,11 @@
 </div>
 
 <div class="right">
-	<div class="rocket">
-		
-	</div>	
+	<div class="rocket"></div>	
 
-	<div class="rocketBase">
-		
-	</div>
+	<div class="rocketBase"></div>
+	<div class="nervous" id="nervous"></div>
+	<div class="cantWait" id="cantWait"></div>
 </div>
 
 

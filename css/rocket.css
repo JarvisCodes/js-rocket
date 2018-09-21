@@ -1,62 +1,7 @@
-.left{
-
-position: fixed;
-background-color: aquamarine;
-width: 50%;
-height: 100%;
-top: 0;
-left: 0
-
+body{
+	font-family: 'helvetica','arial',sans-serif;  
 }
 
-.right{
-
-position: fixed;
-background-color: aliceblue;
-width: 50%;
-height: 100%;
-top: 0;
-right: 0
-
-
-}
-
-.rocket{
-
-	position: absolute;
-	left: 50%;
-	height: 100px;
-	width:25px;
-	bottom: 15px;
-
-	background-color: blue;
-	transition: bottom 10000ms;
-}
-
-.rocketBase{
-	position: absolute;
-	background-color: brown;
-	left: 0;
-	bottom: 0px;
-	width: 100%;
-	height: 20px;
-
-
-}
-body.body-state1 .rocket{
-	transition: none;
-}
-
-body.body-state3 .rocket,
-body.body-state4 .rocket{
-
-	bottom: 1000px;
-}
-
-a.button{
-
-
-}
 
 .state1,
 .state2,
@@ -70,3 +15,129 @@ body.body-state2 .state2{ display: block; }
 body.body-state3 .state3{ display: block; }
 body.body-state4 .state4{ display: block; }
 body.body-state5 .state5{ display: block; }
+
+
+a.button{
+	display: inline-block;
+	padding: 20px 40px;
+	text-transform: uppercase;
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	border-radius: 10px; 
+	transition: color 600ms; 
+
+}
+
+a:hover{
+	color: red;
+
+}
+
+.left{
+position: fixed;
+background-color: aquamarine;
+width: 50%;
+height: 100%;
+top: 0;
+left: 0
+}
+
+.interface{
+	text-align: center;
+	padding: 20px; 
+
+}
+
+.right{
+position: fixed;
+background-color: aliceblue;
+width: 50%;
+height: 100%;
+top: 0;
+right: 0
+}
+
+
+.rocket{
+
+	position: absolute;
+	left: 50%;
+	height: 272px;
+	width:143px;
+	bottom: -5px;
+	margin-left: -71.5px;
+	background: url('../img/rocket-state1.png')
+	no-repeat center center ;
+	transition: bottom 10000ms;
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	bottom: 1000px;
+}
+
+.rocketBase{
+	position: absolute;
+	background: url('../img/ground.png') no-repeat 0 center;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	height: 15px;
+}
+
+body.body-state1 .rocket{
+	transition: none;
+}
+
+
+body.body-state2 .rocket{
+
+	background-image: url('../img/rocket-state2.gif');
+}
+
+body.body-state3 .rocket,body.body-state4 .rocket{
+
+	background-image: url('../img/rocket-state3.gif');
+}
+
+body.body-state5 .rocket{
+
+	background-image: url('../img/boom.png');
+	width: 209px;
+	height: 200px;
+	margin-left:-104.5px;
+
+}
+
+
+.nervous{
+position: absolute;
+background: url('../img/nervous.png');
+width: 223px;
+height: 100px;
+bottom: 220px;
+left: 50%;
+margin-left: -180px;
+display: none;
+}  
+
+.cantWait{
+position: absolute;
+background: url('../img/cant-wait.png');
+width: 223px;
+height: 100px;
+bottom: 220px;
+left: 50%;
+display: none;
+
+} 
+
+.cantWait.show{
+	display: block;
+
+}
+
+.nervous.show{
+	display: block;
+}
